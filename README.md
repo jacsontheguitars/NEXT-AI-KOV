@@ -1,21 +1,29 @@
-# Simulación de Cadenas de Markov
+# NEXT-AI-KOV: Análisis de Navegación con Cadenas de Markov
 
-Aplicación web que simula el comportamiento de usuarios en plataformas digitales usando cadenas de Markov.
+## 🎯 Objetivo General
+Desarrollar un programa en Python que modele, a través de cadenas de Markov, el comportamiento de navegación de los usuarios en plataformas de inteligencia artificial, con el fin de analizar patrones de uso y generar recomendaciones personalizadas.
 
-## 🚀 Despliegue
+## 🎯 Objetivos Específicos
 
-Esta aplicación está desplegada en Streamlit Cloud. Puedes acceder a ella en:
+- 💡 Analizar el comportamiento de los usuarios mediante el uso de cadenas de Markov y matrices estocásticas
+- 📊 Recolectar y procesar datos reales de navegación en plataformas de IA utilizando herramientas de análisis web
+- 🎨 Desarrollar una simulación en Python con una interfaz visual para modelar y representar los patrones de navegación detectados
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tu-app.streamlit.app)
+## 🚀 Características Principales
 
-## 🛠️ Requisitos
+- 🔄 Simulación de comportamiento de usuarios en plataformas de IA
+- 📊 Análisis de patrones de navegación
+- 📈 Visualización de estados y transiciones
+- 🤖 Generación de recomendaciones basadas en el análisis
+
+## 🛠️ Tecnologías Utilizadas
 
 - Python 3.8+
-- Streamlit
-- NumPy
-- Pandas
+- Streamlit (Framework web)
+- NumPy (Cálculos numéricos)
+- Pandas (Análisis de datos)
 
-## 📦 Instalación local
+## 📦 Instalación
 
 1. Clona el repositorio
 2. Instala las dependencias:
@@ -27,13 +35,25 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 📊 Funcionalidades
+## 📱 Despliegue
 
-- Simulación de comportamiento de usuarios
-- Cálculo de matriz de transición
-- Cálculo de estado inicial y estado a largo plazo
-- Visualización de resultados en formato tabular
+La aplicación está disponible en Streamlit Cloud:
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://next-ai-kov.streamlit.app)
+
+## 📚 Documentación
+
+Para más detalles sobre el uso y funcionalidades, consulta la documentación completa en el archivo `docs/`.
 
 ## 📝 Licencia
 
-MIT License
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+## 🤝 Contribución
+
+¡Contribuciones son bienvenidas! Por favor, revisa las pautas de contribución en el archivo CONTRIBUTING.md.
+
+## 📞 Contacto
+
+Para más información o soporte, contacta a:
+- Email: tu.email@email.com
+- GitHub: [tuperfil](https://github.com/tuperfil)
