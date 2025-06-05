@@ -2,6 +2,7 @@
 
 import streamlit as st
 import numpy as np
+from PIL import Image
 from markov.modelo import CadenasDeMarkovIA
 import pandas as pd
 
@@ -163,9 +164,9 @@ st.markdown("""
 def mostrar_encabezado_principal():
     st.markdown("<div class='responsive-logo'>", unsafe_allow_html=True)
     try:
-        # use_container_width=True makes the image fill the container width.
-        # The CSS class '.responsive-logo img' will then control its actual display size and centering.
-        st.image("assets/Logo.png", use_container_width=True) 
+        # Cargar el logo con ancho de columna para mejor adaptación
+        logo = Image.open("assets/Logo.png")
+        st.image(logo, use_column_width=True)  # Se adapta al ancho de la columna
     except FileNotFoundError:
         st.warning("⚠️ No se encontró el logo. Asegúrate de que 'assets/logo.png' exista.")
     except Exception as e:

@@ -1,8 +1,10 @@
+pandas==1.5.3
+streamlit
+numpy
 pip>=23.1
 setuptools
 wheel
-
-streamlit==1.32.2
-pandas==1.5.3
-numpy
-Pillow>=10.0.0
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+google-api-python-client==2.108.0
+oauth2client==4.1.3
