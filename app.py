@@ -231,13 +231,13 @@ def mostrar_inicio():
         st.session_state['modo'] = 'automatico'
         st.session_state['num_usuarios'] = 100  # Default values
         st.session_state['num_usos'] = 20      # Default values
-        navegar_a_pagina(" Análisis de Datos") # Note the leading space
+        navegar_a_pagina("Análisis de Datos")  # Corregido: eliminado espacio al inicio
 
     if st.button("Configurar Análisis Manual", key='manual_btn_inicio'):
         st.session_state['modo'] = 'manual'
         st.session_state['num_usuarios'] = 100  # Default values
         st.session_state['num_usos'] = 20      # Default values
-        navegar_a_pagina(" Análisis de Datos") # Note the leading space
+        navegar_a_pagina("Análisis de Datos")  # Corregido: eliminado espacio al inicio
     
     # Mostrar texto después de los botones
     st.markdown("""
