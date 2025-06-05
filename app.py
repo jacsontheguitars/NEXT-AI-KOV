@@ -164,13 +164,16 @@ st.markdown("""
 def mostrar_encabezado_principal():
     st.markdown("<div class='responsive-logo'>", unsafe_allow_html=True)
     try:
-        # Cargar el logo con ancho de columna para mejor adaptación
-        logo = Image.open("assets/Logo.png")
-        st.image(logo, use_column_width=True)  # Se adapta al ancho de la columna
-    except FileNotFoundError:
-        st.warning("⚠️ No se encontró el logo. Asegúrate de que 'assets/logo.png' exista.")
+        # Usar ruta relativa compatible con cualquier SO
+        import os
+        logo_path = os.path.join("assets", "Logo.png")
+        if not os.path.exists(logo_path):
+            st.warning(f"⚠️ No se encontró el logo en: {os.path.abspath(logo_path)}")
+        else:
+            logo = Image.open(logo_path)
+            st.image(logo, use_column_width=True)  # Se adapta al ancho de la columna
     except Exception as e:
-        st.error(f"Ocurrió un error al cargar el logo: {e}")
+        st.error(f"Error al cargar el logo: {str(e)}")
     st.markdown("</div>", unsafe_allow_html=True)
     
     st.markdown("<h1 class='facebook-title'>NEXT-AI-KOV</h1>", unsafe_allow_html=True)
