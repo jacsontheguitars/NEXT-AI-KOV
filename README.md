@@ -55,5 +55,4 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más 
 ## 📞 Contacto
 
 Para más información o soporte, contacta a:
-- Email: tu.email@email.com
-- GitHub: [tuperfil](https://github.com/tuperfil)
+- GitHub: @JACSONTHEGUITARS (https://github.com/JACSONTHEGUITARS)
