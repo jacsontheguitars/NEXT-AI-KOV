@@ -191,13 +191,19 @@ if 'modo' not in st.session_state:
 
 # Función para navegar
 def navegar_a_pagina(pagina):
-    st.session_state['pagina_actual'] = pagina
     try:
-        st.rerun()
-    except st.runtime.scriptrunner.RerunException:
-        pass  # esto es esperado al forzar rerun
+        # Actualizar el estado de la página
+        st.session_state['pagina_actual'] = pagina
+        
+        # Forzar una actualización de la interfaz
+        st.experimental_rerun()
+        
     except Exception as e:
-        st.error(f"Error al redirigir: {e}")
+        # Manejar cualquier error inesperado
+        st.error(f"Error al cambiar de página: {str(e)}")
+        # Intentar restaurar el estado
+        if 'pagina_actual' not in st.session_state:
+            st.session_state['pagina_actual'] = "Inicio"
 
 # Menú principal en la sidebar
 st.sidebar.title("Navegación")
