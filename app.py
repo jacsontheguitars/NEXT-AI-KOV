@@ -165,7 +165,7 @@ def mostrar_encabezado_principal():
     try:
         # use_container_width=True makes the image fill the container width.
         # The CSS class '.responsive-logo img' will then control its actual display size and centering.
-        st.image("assets/logo.png", use_container_width=True) 
+        st.image("assets/Logo.png", use_container_width=True) 
     except FileNotFoundError:
         st.warning("⚠️ No se encontró el logo. Asegúrate de que 'assets/logo.png' exista.")
     except Exception as e:
