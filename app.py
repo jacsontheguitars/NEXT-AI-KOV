@@ -199,13 +199,13 @@ st.sidebar.title("Navegación")
 st.sidebar.markdown("---") # Visual separator
 
 if st.sidebar.button("🚀  Inicio", key="btn_inicio"):
-    navegar_a_pagina(" Inicio")
+    navegar_a_pagina("Inicio")
 if st.sidebar.button("📊  Análisis de Datos", key="btn_analisis"):
-    navegar_a_pagina(" Análisis de Datos")
+    navegar_a_pagina("Análisis de Datos")
 if st.sidebar.button("🏆  Créditos", key="btn_creditos"):
-    navegar_a_pagina(" Créditos")
+    navegar_a_pagina("Créditos")
 if st.sidebar.button("🚪  Salir", key="btn_salir"):
-    navegar_a_pagina(" Salir")
+    navegar_a_pagina("Salir")
 st.sidebar.markdown("---") # Visual separator
 
 # Función para mostrar la página de inicio
@@ -353,14 +353,14 @@ def mostrar_salir():
 
 # Mostrar la página correspondiente
 if 'pagina_actual' not in st.session_state:
-    st.session_state['pagina_actual'] = " Inicio" # Default a Inicio si no existe
+    st.session_state['pagina_actual'] = "Inicio"  # Default a Inicio si no existe
 
-if st.session_state['pagina_actual'] == " Inicio":
+if st.session_state['pagina_actual'] == "Inicio":
     mostrar_inicio()
-elif st.session_state['pagina_actual'] == " Análisis de Datos":
+elif st.session_state['pagina_actual'] == "Análisis de Datos":
     mostrar_analisis_datos()
-elif st.session_state['pagina_actual'] == " Créditos":
+elif st.session_state['pagina_actual'] == "Créditos":
     mostrar_creditos()
-elif st.session_state['pagina_actual'] == " Salir":
+elif st.session_state['pagina_actual'] == "Salir":
     mostrar_salir()
 
